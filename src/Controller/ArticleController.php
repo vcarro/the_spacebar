@@ -26,6 +26,7 @@ class ArticleController extends AbstractController
             'This is the second',
             'and this is the latest',
         ];
+
         return $this->render('article/show.html.twig', [
             'title' => ucwords(str_replace('-', ' ', $slug)),
             'comments' => $comments,
